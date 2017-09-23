@@ -3,7 +3,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <a class="logo" href="index.html">
-                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="<?php echo base_url(); ?>public/img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
@@ -19,7 +19,7 @@
                                 <ul class="top-user-area-list list list-horizontal list-border">
                                     <li class="top-user-area-avatar">
                                         <a href="user-profile.html">
-                                            <img class="origin round" src="img/40x40.png" alt="Image Alternative text" title="AMaze" />Hi, John</a>
+                                            <img class="origin round" src="<?php echo base_url(); ?>public/img/40x40.png" alt="Image Alternative text" title="AMaze" />Hi, John</a>
                                     </li>
                                     <li><a href="#">Sign Out</a>
                                     </li>
@@ -39,37 +39,37 @@
                                     </li>
                                     <li class="top-user-area-lang nav-drop">
                                         <a href="#">
-                                            <img src="img/flags/32/uk.png" alt="Image Alternative text" title="Image Title" />ENG<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
+                                            <img src="<?php echo base_url(); ?>public/img/flags/32/uk.png" alt="Image Alternative text" title="Image Title" />ENG<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i>
                                         </a>
                                         <ul class="list nav-drop-menu">
                                             <li>
                                                 <a title="German" href="#">
-                                                    <img src="img/flags/32/de.png" alt="Image Alternative text" title="Image Title" /><span class="right">GER</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/de.png" alt="Image Alternative text" title="Image Title" /><span class="right">GER</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a title="Japanise" href="#">
-                                                    <img src="img/flags/32/jp.png" alt="Image Alternative text" title="Image Title" /><span class="right">JAP</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/jp.png" alt="Image Alternative text" title="Image Title" /><span class="right">JAP</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a title="Italian" href="#">
-                                                    <img src="img/flags/32/it.png" alt="Image Alternative text" title="Image Title" /><span class="right">ITA</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/it.png" alt="Image Alternative text" title="Image Title" /><span class="right">ITA</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a title="French" href="#">
-                                                    <img src="img/flags/32/fr.png" alt="Image Alternative text" title="Image Title" /><span class="right">FRE</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/fr.png" alt="Image Alternative text" title="Image Title" /><span class="right">FRE</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a title="Russian" href="#">
-                                                    <img src="img/flags/32/ru.png" alt="Image Alternative text" title="Image Title" /><span class="right">RUS</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/ru.png" alt="Image Alternative text" title="Image Title" /><span class="right">RUS</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a title="Korean" href="#">
-                                                    <img src="img/flags/32/kr.png" alt="Image Alternative text" title="Image Title" /><span class="right">KOR</span>
+                                                    <img src="<?php echo base_url(); ?>public/img/flags/32/kr.png" alt="Image Alternative text" title="Image Title" /><span class="right">KOR</span>
                                                 </a>
                                             </li>
                                         </ul>

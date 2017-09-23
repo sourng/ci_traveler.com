@@ -1,6 +1,6 @@
  <div class="nav">
                     <ul class="slimmenu" id="slimmenu">
-                        <li class="active"><a href="index.html">Home</a>
+                        <li><a href="index.html">Home</a>
                             <ul>
                                 <li><a href="index.html">Default</a>
                                 </li>
@@ -118,7 +118,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="hotels.html">Hotels</a>
+                        <li><a href="#">Hotels</a>
                             <ul>
                                 <li><a href="hotel-details.html">Details</a>
                                     <ul>

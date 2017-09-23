@@ -16,9 +16,9 @@
     <!-- /GOOGLE FONTS -->
 
 <?php 
-if(isset($style_home)){
-    $this->load->view($style_home);
-}
+    if(isset($style_home)){
+        $this->load->view($style_home);
+    }
 ?>
 </head>
     
