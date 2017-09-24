@@ -1,70 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-    <title>Traveler - Hotels</title>
-
-
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta name="keywords" content="Template, html, premium, themeforest" />
-    <meta name="description" content="Traveler - Premium template for travel companies">
-    <meta name="author" content="Tsoy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- GOOGLE FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
-    <!-- /GOOGLE FONTS -->
-    <?php 
-    if(isset($style_home)){
-        $this->load->view($style_home);
-    }
-    ?>
-
-
-</head>
-
-<body>
-
-    <!-- FACEBOOK WIDGET -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- /FACEBOOK WIDGET -->
-    <div class="global-wrap">
-        <header id="main-header">
-
-            <?php 
-            if(isset($header_top)){
-                $this->load->view($header_top);
-            }
-            ?>
-
-            <div class="container">
-                <?php 
-                if(isset($nav)){
-                    $this->load->view($nav);
-                }
-            ?>
-            </div>
-        
-        </header>
-
-
-
-
-
-        <div class="container">
-
-            <ul class="breadcrumb">
+<ul class="breadcrumb">
                 <li><a href="index.html">Home</a>
                 </li>
                 <li><a href="#">United States</a>
@@ -168,179 +102,13 @@
             <h3 class="booking-title">521 hotels in New York on Mar 22 - Apr 17 for 1 adult <small><a class="popup-text" href="#search-dialog" data-effect="mfp-zoom-out">Change search</a></small></h3>
             <div class="row">
                 <div class="col-md-3">
-                    <aside class="booking-filters text-white">
-                        <h3>Filter By:</h3>
-                        <ul class="list booking-filters-list">
-                            <li>
-                                <h5 class="booking-filters-title">Price</h5>
-                                <input type="text" id="price-slider">
-                            </li>
-                            <li>
-                                <h5 class="booking-filters-title">Star Rating</h5>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />5 star (220)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />4 star (112)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />3 star (75)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />2 star (60)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />1 star (20)</label>
-                                </div>
-                            </li>
-                            <li>
-                                <h5 class="booking-filters-title">Facility</h5>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Wi-Fi (55)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Parking (264)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Airport Shuttle (137)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Fitness Center (15)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Non-Smoking Rooms (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Indoor Pool (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Spa (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Family Rooms (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Pet Friendly (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Restaurant (20)</label>
-                                </div>
-                            </li>
-                            <li>
-                                <h5 class="booking-filters-title">Room Facility</h5>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Air conditioning (55)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Bathtub (264)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Flat-screen TV (137)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Kitchen/kitchenette (15)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Patio (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Soundproof (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Spa tub (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Terrace (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />View (20)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Washing machine (20)</label>
-                                </div>
-                            </li>
-                            <li>
-                                <h5 class="booking-filters-title">Hotel Theme</h5>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Romance / Honeymoon (225)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Spa / Relaxation (178)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Family (70)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Budget / Backpacker (15)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />City Trip (53)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Luxury (134)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Design (80)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Shopping (93)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Countryside (4)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Gourmet (15)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Castle (1)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Golf / Sports (37)</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />Business (210)</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </aside>
+
+                    <?php 
+                        if(isset($menu_left_hotel)){
+                            $this->load->view($menu_left_hotel);
+                        }
+                    ?>
+
                 </div>
                 <div class="col-md-9">
                     <div class="nav-drop booking-sort">
@@ -359,6 +127,7 @@
                         </ul>
                     </div>
                     <ul class="booking-list">
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -391,6 +160,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -423,6 +193,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -455,6 +226,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -487,6 +259,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -519,6 +292,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -551,6 +325,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -583,6 +358,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -615,6 +391,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -647,6 +424,8 @@
                                 </div>
                             </a>
                         </li>
+
+                        
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
@@ -874,28 +653,4 @@
                 </div>
             </div>
             <div class="gap"></div>
-        </div>
-
-
-
-        <footer id="main-footer">
-            <?php 
-                if(isset($footer)){
-                    $this->load->view($footer);
-                }
-            ?>
-        </footer>
-
-        <!-- Script Footer -->
-        <?php 
-            if(isset($script_footer_home)){
-                $this->load->view($script_footer_home);
-            }
-        ?>
-
-    </div>
-</body>
-
-</html>
-
-
+            
