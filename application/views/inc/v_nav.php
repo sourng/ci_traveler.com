@@ -118,21 +118,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">Hotels</a>
+                        <li><a href="<?php echo site_url(); ?>hotels">Hotels</a>
                             <ul>
-                                <li><a href="hotel-details.html">Details</a>
+                                <li><a href="<?php echo site_url(); ?>hotels">Details</a>
                                     <ul>
-                                        <li><a href="hotel-details.html">Layout 1</a>
-                                        </li>
-                                        <li><a href="hotel-details-2.html">Layout 2</a>
-                                        </li>
-                                        <li><a href="hotel-details-3.html">Layout 3</a>
-                                        </li>
-                                        <li><a href="hotel-details-4.html">Layout 4</a>
-                                        </li>
+                                        <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Detail</a>
+                                        </li>                                      
                                     </ul>
                                 </li>
-                                <li><a href="hotel-payment.html">Payment</a>
+                                <li><a href="<?php echo site_url(); ?>hotels/payment">Payment</a>
                                     <ul>
                                         <li><a href="hotel-payment.html">Registered</a>
                                         </li>

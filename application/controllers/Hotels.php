@@ -51,7 +51,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_payment(){
+    public function payment(){
 
         $data = array();
       
@@ -69,7 +69,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_payment_registered(){
+    public function payment_registered(){
 
         $data = array();
       
@@ -87,7 +87,7 @@ class Hotels extends CI_Controller {
         
     }
     
-    public function hotels_payment_unregistered(){
+    public function payment_unregistered(){
 
         $data = array();
       
@@ -105,7 +105,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_search(){
+    public function search(){
 
         $data = array();
       
@@ -123,7 +123,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_search_results(){
+    public function search_results(){
 
         $data = array();
       
