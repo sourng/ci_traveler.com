@@ -120,7 +120,7 @@
                         </li>
                         <li><a href="<?php echo site_url(); ?>hotels">Hotels</a>
                             <ul>
-                                <li><a href="<?php echo site_url(); ?>hotels">Details</a>
+                                <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Details</a>
                                     <ul>
                                         <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Detail</a>
                                         </li>                                      
