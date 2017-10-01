@@ -6,9 +6,11 @@ class Hotels extends CI_Controller {
     
     function __construct() {
         parent::__construct();
+
         // $this->load->model('post');
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
+
         $this->load->helper('url');
     }
     
@@ -144,3 +146,6 @@ class Hotels extends CI_Controller {
     }
     
 }
+
+
+
