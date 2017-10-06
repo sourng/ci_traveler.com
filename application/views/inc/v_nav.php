@@ -244,30 +244,30 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="cars.html">Cars</a>
+                        <li><a href="<?php echo site_url(); ?>cars">Cars</a>
                             <ul>
-                                <li><a href="car-details.html">Details</a>
+                                <li><a href="<?php echo site_url(); ?>cars/cars_details">Details</a>
                                 </li>
-                                <li><a href="car-payment.html">Payment</a>
+                                <li><a href="<?php echo site_url(); ?>cars/cars_payment">Payment</a>
                                     <ul>
-                                        <li><a href="car-payment.html">Registered</a>
+                                        <li><a href="<?php echo site_url(); ?>cars/cars_payment">Registered</a>
                                         </li>
-                                        <li><a href="car-payment-registered-card.html">Existed Cards</a>
+                                        <li><a href="<?php echo site_url(); ?>cars/cars_payment_registered_card">Existed Cards</a>
                                         </li>
-                                        <li><a href="car-payment-unregistered.html">Unregistered</a>
+                                        <li><a href="<?php echo site_url(); ?>cars/cars_payment_unregistered">Unregistered</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="car-search.html">Search</a>
+                                <li><a href="<?php echo site_url(); ?>cars/cars_search">Search</a>
                                     <ul>
-                                        <li><a href="car-search.html">Layout 1</a>
+                                        <li><a href="cars_results">Layout 1</a>
                                         </li>
-                                        <li><a href="car-search-2.html">Layout 2</a>
-                                        </li>
+                                        <!-- <li><a href="car-search-2.html">Layout 2</a> -->
+                                        <!-- </li> -->
                                     </ul>
                                 </li>
-                                <li><a href="cars.html">Results</a>
-                                    <ul>
+                                <li><a href="<?php echo site_url(); ?>cars/cars_results">Results</a>
+                                    <!-- <ul>
                                         <li><a href="cars.html">Layout 1</a>
                                         </li>
                                         <li><a href="cars-results-2.html">Layout 2</a>
@@ -277,8 +277,8 @@
                                         <li><a href="cars-results-4.html">Layout 4</a>
                                         </li>
                                         <li><a href="cars-results-5.html">Layout 5</a>
-                                        </li>
-                                    </ul>
+                                        </li> -->
+                                   <!--  </ul> -->
                                 </li>
                             </ul>
                         </li>
