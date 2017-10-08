@@ -6,7 +6,8 @@ class Hotels extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-
+        $this->load->model('Crud_model','m_crud');
+        $this->load->database();
         // $this->load->model('post');
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
@@ -18,6 +19,7 @@ class Hotels extends CI_Controller {
 
      
       	$data = array();
+         $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
       
       	$data['style_home']="inc/v_style_home";
       	$data['header_top']="inc/v_header_top";
@@ -37,7 +39,8 @@ class Hotels extends CI_Controller {
     public function hotels_details(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -59,7 +62,8 @@ class Hotels extends CI_Controller {
     public function payment(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -80,6 +84,7 @@ class Hotels extends CI_Controller {
     public function payment_registered(){
 
         $data = array();
+         $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
       
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
@@ -103,7 +108,8 @@ class Hotels extends CI_Controller {
     public function payment_unregistered(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -125,7 +131,8 @@ class Hotels extends CI_Controller {
     public function search(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -146,7 +153,8 @@ class Hotels extends CI_Controller {
     public function search_results(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+       
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";

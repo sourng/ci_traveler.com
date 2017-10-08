@@ -6,13 +6,17 @@ class Cars extends CI_Controller {
     
     function __construct() {
         parent::__construct();
+        $this->load->model('Crud_model','m_crud');
+        $this->load->database();
+        
         $this->load->helper('url');
     }
     
     public function index(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
