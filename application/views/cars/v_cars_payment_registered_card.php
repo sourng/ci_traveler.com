@@ -1,7 +1,7 @@
 <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title" />
+                    <img class="pp-img" src="<?php echo site_url(); ?>/public/img/paypal.png" alt="Image Alternative text" title="Image Title" />
                     <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p><a class="btn btn-primary">Checkout via Paypal</a>	
                 </div>
 
@@ -9,14 +9,14 @@
                     <h4>Pay via Credit/Debit Card</h4>
                     <ul class="card-select">
                         <li>
-                            <img class="card-select-img" src="img/payment/visa-curved-64px.png" alt="Image Alternative text" title="Image Title" />
+                            <img class="card-select-img" src="<?php echo site_url(); ?>/public/img/payment/visa-curved-64px.png" alt="Image Alternative text" title="Image Title" />
                             <div class="card-select-data">
                                 <p class="card-select-number">xxxx xxxx xxxx 1456</p>
                                 <input class="form-control card-select-cvc" type="text" placeholder="CVC" />
                             </div>
                         </li>
                         <li>
-                            <img class="card-select-img" src="img/payment/maestro-curved-64px.png" alt="Image Alternative text" title="Image Title" />
+                            <img class="card-select-img" src="<?php echo site_url(); ?>/public/img/payment/maestro-curved-64px.png" alt="Image Alternative text" title="Image Title" />
                             <div class="card-select-data">
                                 <p class="card-select-number">xxxx xxxx xxxx 6698</p>
                                 <input class="form-control card-select-cvc" type="text" placeholder="CVC" />
@@ -58,7 +58,7 @@
                     <div class="booking-item-payment">
                         <header class="clearfix">
                             <a class="booking-item-payment-img" href="#">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="<?php echo site_url(); ?>/public/img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
                             </a>
                             <h5 class="booking-item-payment-title"><a href="#">Maserati GranTurismo</a></h5>
                         </header>

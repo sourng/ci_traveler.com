@@ -259,12 +259,12 @@
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo site_url(); ?>cars/cars_search">Search</a>
-                                    <ul>
-                                        <li><a href="cars_results">Layout 1</a>
-                                        </li>
+                                    <!-- <ul>
+                                        <li><a href="cars_search">Layout 1</a>
+                                        </li> -->
                                         <!-- <li><a href="car-search-2.html">Layout 2</a> -->
                                         <!-- </li> -->
-                                    </ul>
+                                   <!--  </ul> -->
                                 </li>
                                 <li><a href="<?php echo site_url(); ?>cars/cars_results">Results</a>
                                     <!-- <ul>

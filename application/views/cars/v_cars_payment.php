@@ -40,7 +40,7 @@
                     <div class="booking-item-payment">
                         <header class="clearfix">
                             <a class="booking-item-payment-img" href="#">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="<?php echo site_url(); ?>/public/img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
                             </a>
                             <h5 class="booking-item-payment-title"><a href="#">Maserati GranTurismo</a></h5>
                         </header>

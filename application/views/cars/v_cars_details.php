@@ -34,7 +34,7 @@
                     <div class="col-md-9">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="<?php echo site_url(); ?>/public/img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
                             </div>
                             <div class="col-md-7">
                                 <div class="booking-item-price-calc">
