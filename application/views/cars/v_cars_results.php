@@ -280,7 +280,7 @@
                     <ul class="booking-list">
                         <?php for ($i=1; $i <=15 ; $i++) { ?>
                             <li>
-                            <a class="booking-item" href="#">
+                            <a class="booking-item" href="<?php echo site_url(); ?>cars/cars_details">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-car-img">

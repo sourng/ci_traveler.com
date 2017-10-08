@@ -63,8 +63,8 @@
                    <?php for ($i=1; $i <=12 ; $i++) { ?>
                     <div class="col-md-3">
                     <div class="thumb">
-                        <a class="hover-img" href="#">
-                            <img src="<?php echo site_url(); ?>public/img/800x600.png" alt="Image Alternative text" title="Sydney Harbour" />
+                        <a class="hover-img" href="<?php echo site_url(); ?>cars/cars_details">
+                            <img src="<?php echo site_url(); ?>public/img/800x600.jpg" alt="Image Alternative text" title="Sydney Harbour" />
                             <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-hold">
                                 <div class="text-small">
                                     <h5>Sydney Hotels</h5>

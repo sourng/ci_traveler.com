@@ -1,6 +1,6 @@
  <div class="nav">
                     <ul class="slimmenu" id="slimmenu">
-                        <li><a href="index.html">Home</a>
+                     <!--    <li><a href="index.html">Home</a>
                             <ul>
                                 <li><a href="index.html">Default</a>
                                 </li>
@@ -19,8 +19,10 @@
                                 <li><a href="index-7.html">Layout 7</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li><a href="success-payment.html">Pages</a>
+                        </li> -->
+
+
+                       <!--  <li><a href="success-payment.html">Pages</a>
                             <ul>
                                 <li><a href="success-payment.html">Success Payment</a>
                                 </li>
@@ -95,8 +97,9 @@
                                 <li><a href="page-sidebar-left.html">Sidebar Left</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li><a href="feature-typography.html">Features</a>
+                        </li> -->
+
+                       <!--  <li><a href="feature-typography.html">Features</a>
                             <ul>
                                 <li><a href="feature-typography.html">Typography</a>
                                 </li>
@@ -117,14 +120,15 @@
                                 <li><a href="feature-media.html">Media</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+
                         <li><a href="<?php echo site_url(); ?>hotels">Hotels</a>
                             <ul>
                                 <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Details</a>
-                                    <ul>
+                                  <!--   <ul>
                                         <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Detail</a>
                                         </li>                                      
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="<?php echo site_url(); ?>hotels/payment">Payment</a>
                                     <ul>
@@ -137,34 +141,15 @@
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo site_url (); ?>hotels/search">Search</a>
-                                    <ul>
-                                        <li><a href="<?php echo site_url (); ?>hotels/search">Layout 1</a>
-                                        </li>
-
-                                        <!-- <li><a href="hotel-search-2.html">Layout 2</a>
-                                        </li> -->
-
-                                    </ul>
+                                  
                                 </li>
                                 <li><a href="<?php echo site_url (); ?>hotels/search_results">Results</a>
-                                    <ul>
-
-                                        <li><a href="<?php echo site_url (); ?>hotels/search_results">Layout 1</a>
-                                        </li>
-
-                                        <!-- <li><a href="hotels-search-results-2.html">Layout 2</a>
-                                        </li>
-                                        <li><a href="hotels-search-results-3.html">Layout 3</a>
-                                        </li>
-                                        <li><a href="hotels-search-results-4.html">Layout 4</a>
-                                        </li>
-                                        <li><a href="hotel-search-results-5.html">Layout 5</a>
-                                        </li> -->
-                                    </ul>
+                               
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="flights.html">Flights</a>
+
+                       <!--  <li><a href="flights.html">Flights</a>
                             <ul>
                                 <li><a href="flight-payment.html">Payment</a>
                                     <ul>
@@ -198,6 +183,7 @@
                                 </li>
                             </ul>
                         </li>
+                         -->
                         <li><a href="rentals.html">Rentals</a>
                             <ul>
                                 <li><a href="rentals-details.html">Details</a>
@@ -244,6 +230,7 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li><a href="<?php echo site_url(); ?>cars">Cars</a>
                             <ul>
                                 <li><a href="<?php echo site_url(); ?>cars/cars_details">Details</a>
@@ -258,30 +245,13 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="<?php echo site_url(); ?>cars/cars_search">Search</a>
-                                    <!-- <ul>
-                                        <li><a href="cars_search">Layout 1</a>
-                                        </li> -->
-                                        <!-- <li><a href="car-search-2.html">Layout 2</a> -->
-                                        <!-- </li> -->
-                                   <!--  </ul> -->
+                                <li><a href="<?php echo site_url(); ?>cars/cars_search">Search</a>                                   
                                 </li>
-                                <li><a href="<?php echo site_url(); ?>cars/cars_results">Results</a>
-                                    <!-- <ul>
-                                        <li><a href="cars.html">Layout 1</a>
-                                        </li>
-                                        <li><a href="cars-results-2.html">Layout 2</a>
-                                        </li>
-                                        <li><a href="cars-results-3.html">Layout 3</a>
-                                        </li>
-                                        <li><a href="cars-results-4.html">Layout 4</a>
-                                        </li>
-                                        <li><a href="cars-results-5.html">Layout 5</a>
-                                        </li> -->
-                                   <!--  </ul> -->
+                                <li><a href="<?php echo site_url(); ?>cars/cars_results">Results</a>                                   
                                 </li>
                             </ul>
                         </li>
+<!-- 
                         <li><a href="activities.html">Activities</a>
                             <ul>
                                 <li><a href="activitiy-details.html">Details</a>
@@ -327,6 +297,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+
+                        
                     </ul>
                 </div>
