@@ -18,7 +18,7 @@ class Home extends CI_Controller {
       $data = array();
       // Add Style Home
       $data['header_top']="inc/v_header_top";
-     $data['nav']="inc/v_nav";
+	  $data['nav']="inc/v_nav";
        // $data['nav']=null;
       $data['style_home']="inc/v_style_home";
 

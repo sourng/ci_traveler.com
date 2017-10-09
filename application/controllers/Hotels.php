@@ -6,11 +6,9 @@ class Hotels extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-
         // $this->load->model('post');
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
-
         $this->load->helper('url');
     }
     
@@ -24,10 +22,10 @@ class Hotels extends CI_Controller {
       	$data['nav']="inc/v_nav";
         $data['menu_left_hotel']="inc/v_menu_left_hotels";
 
-		    $data['page']="hotels/v_hotels";
+		$data['page']="hotels/v_hotels";
 
         $data['footer']="inc/v_footer";
-		    $data['script_footer_home']="inc/v_script_footer_home";
+		$data['script_footer_home']="inc/v_script_footer_home";
 
         $this->load->view('v_template_hotels',$data);
     }
@@ -53,7 +51,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function payment(){
+    public function hotels_payment(){
 
         $data = array();
       
@@ -71,7 +69,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function payment_registered(){
+    public function hotels_payment_registered(){
 
         $data = array();
       
@@ -89,7 +87,7 @@ class Hotels extends CI_Controller {
         
     }
     
-    public function payment_unregistered(){
+    public function hotels_payment_unregistered(){
 
         $data = array();
       
@@ -107,7 +105,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function search(){
+    public function hotels_search(){
 
         $data = array();
       
@@ -125,7 +123,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function search_results(){
+    public function hotels_search_results(){
 
         $data = array();
       
@@ -146,6 +144,3 @@ class Hotels extends CI_Controller {
     }
     
 }
-
-
-
