@@ -6,7 +6,8 @@ class Home extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-        // $this->load->model('post');
+        $this->load->model('Crud_model','m_crud');
+        $this->load->database();
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
         $this->load->helper('url');
@@ -21,6 +22,10 @@ class Home extends CI_Controller {
 	  $data['nav']="inc/v_nav";
        // $data['nav']=null;
       $data['style_home']="inc/v_style_home";
+
+
+      $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
 
       $data['footer']="inc/v_footer";
       $data['script_footer_home']="inc/v_script_footer_home";
