@@ -84,7 +84,7 @@
                     <div class="col-md-3">
                     <div class="thumb">
                         <header class="thumb-header">
-                            <a href="#">
+                            <a href="<?php echo site_url(); ?>cars/cars_details">
                                 <img src="<?php echo site_url(); ?>public/img/Mercedes-Benz-Clasa-G-facelift.png" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </header>
