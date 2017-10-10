@@ -6,11 +6,10 @@ class Hotels extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-<<<<<<< HEAD
-=======
+
         $this->load->model('Crud_model','m_crud');
         $this->load->database();
->>>>>>> 4c1f6787b53b46bc14b9def583db02689bb27a95
+
         // $this->load->model('post');
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
@@ -27,12 +26,11 @@ class Hotels extends CI_Controller {
       	$data['header_top']="inc/v_header_top";
       	$data['nav']="inc/v_nav";
 
-<<<<<<< HEAD
-=======
+
         $data['change_search']="hotels_layout/v_change_search";
         $data['menu_left_hotel']="hotels_layout/v_menu_left_hotels";
 
->>>>>>> 4c1f6787b53b46bc14b9def583db02689bb27a95
+
 		$data['page']="hotels/v_hotels";
 
         $data['footer']="inc/v_footer";
