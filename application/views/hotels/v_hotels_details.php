@@ -28,6 +28,9 @@
                     </div>
                     <div class="col-md-3">
                         <p class="booking-item-header-price"><small>price from</small>  <span class="text-lg">$350</span>/night</p>
+                        
+                        <center><a href="<?php echo site_url(); ?>hotels/payment"><span class="btn btn-primary">Book Nows</span></a></center>
+               
                     </div>
                 </div>
             </header>
