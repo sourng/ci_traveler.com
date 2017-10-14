@@ -70,12 +70,31 @@
             </div>
             <h3 class="mb20">Hotel Reviews</h3>
             <div class="row row-wrap">
-                
-                <?php 
-                    if(isset($review)){
-                        $this->load->view($review);
-                    }
-                ?>
+                <div class="col-md-8">
+
+                    <?php 
+                        if(isset($review)){
+                            $this->load->view($review);
+                        }
+                    ?>
+                    <!--write_review-->
+                    <div class="box bg-gray">    
+                       <?php
+                            if(isset($write_review)){
+                                $this->load->view($write_review);
+                            }
+                       ?>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <?php
+                        if(isset($hotels_near)){
+                            $this->load->view($hotels_near);
+                        }
+                    ?>
+                </div>
 
 
             </div>

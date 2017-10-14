@@ -8,21 +8,19 @@
     <div class="tab-content">
         <div class="tab-pane fade in active" id="tab-1">
             <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs">
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY RIO INTERNACIONAL rooftop pool" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="The pool" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF suite2" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY LIBERDADE" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel 1" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF suite" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY RIO INTERNACIONAL de luxe" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel 2" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO luxury suite" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel EDEN MAR suite" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO lobby" />
-                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO suite lhotel living room" />
+                <?php
+                    for($i=1;$i<=10;$i++){
+                        ?>
+                    <img src="<?php echo base_url();?>public/img/brookfield_800x600.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />
+
+                    <img src="<?php echo base_url();?>public/img/offices__800×600.jpg" alt="Image Alternative text" title="hotel PORTO BAY RIO INTERNACIONAL rooftop pool" />
+
+                     <img src="<?php echo base_url();?>public/img/hotel_paris_800×600.jpg" alt="Image Alternative text" title="hotel PORTO BAY RIO INTERNACIONAL rooftop pool" />
+
+                <?php
+                    }
+                        ?>
+    
             </div>
         </div>
         <div class="tab-pane fade" id="google-map-tab">

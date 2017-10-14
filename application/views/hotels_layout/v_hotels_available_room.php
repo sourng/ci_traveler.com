@@ -120,13 +120,13 @@
                     <div class="gap gap-small"></div>
                     <ul class="booking-list">
                        <?php 
-                      	for($i=0;$i<3;$i++){
+                      	for($i=0;$i<4;$i++){
                       		?>
                       		  <li>
                             <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img src="img/800x600.png" alt="Image Alternative text" title="The pool" />
+                                        <img src="<?php echo base_url();?>public/img/room_800×600.jpg" alt="Image Alternative text" title="The pool" />
                                     </div>
                                     <div class="col-md-6">
                                         <h5 class="booking-item-title">Family Suite</h5>

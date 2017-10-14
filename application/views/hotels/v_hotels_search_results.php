@@ -117,7 +117,7 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
-                                            <img src="img/800x600.png" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO suite lhotel living room" />
+                                            <img src="<?php echo base_url();?>public/img/Hotel_Centar_800×600.jpg" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO suite lhotel living room" />
                                             <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>28</div>
                                         </div>
                                     </div>
