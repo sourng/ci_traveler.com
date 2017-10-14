@@ -8,7 +8,7 @@
                     <div class="booking-item booking-item-small">
                         <div class="row">
                             <div class="col-xs-4">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />
+                                <img src="<?php echo base_url();?>public/img/Hotel_Centar_800×600.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />
                             </div>
                             <div class="col-xs-5">
                                 <h5 class="booking-item-title">Waldorf Astoria New York</h5>
