@@ -184,48 +184,48 @@
                             </ul>
                         </li>
                          -->
-                        <li><a href="rentals.html">Rentals</a>
+                        <li><a href="<?php echo site_url(); ?>rentals">Rentals</a>
                             <ul>
-                                <li><a href="rentals-details.html">Details</a>
-                                    <ul>
+                                <li><a href="<?php echo site_url(); ?>rentals/rentals_details">Details</a>
+                                    <!-- <ul> 
                                         <li><a href="rentals-details.html">Layout 1</a>
                                         </li>
                                         <li><a href="rentals-details-2.html">Layout 2</a>
                                         </li>
                                         <li><a href="rentals-details-3.html">Layout 3</a>
                                         </li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="<?php echo site_url(); ?>rentals/rental_payment">Payment</a>
+                                    <ul>
+                                        <li><a href="<?php echo site_url(); ?>rentals/rental_payment">Registered</a>
+                                        </li>
+                                        <li><a href="<?php echo site_url(); ?>rentals/rental_payment_registered_card">Existed Cards</a>
+                                        </li>
+                                        <li><a href="<?php echo site_url(); ?>rentals/rental_payment_unregistered">Unregistered</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><a href="rental-payment.html">Payment</a>
-                                    <ul>
-                                        <li><a href="rental-payment.html">Registered</a>
-                                        </li>
-                                        <li><a href="rental-payment-registered-card.html">Existed Cards</a>
-                                        </li>
-                                        <li><a href="rental-payment-unregistered.html">Unregistered</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="rentals-search.html">Search</a>
-                                    <ul>
+                                <li><a href="<?php echo site_url(); ?>rentals/rentals_search">Search</a>
+                                    <!-- <ul> 
                                         <li><a href="rentals-search.html">Layout 1</a>
                                         </li>
                                         <li><a href="rentals-search-2.html">Layout 2</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li><a href="rentals.html">Results</a>
+                                <li><a href="<?php echo site_url(); ?>rentals">Results</a>
                                     <ul>
-                                        <li><a href="rentals.html">Layout 1</a>
+                                        <!-- <li><a href="rentals.html">Layout 1</a> 
                                         </li>
-                                        <li><a href="rentals-search-results-2.html">Layout 2</a>
-                                        </li>
-                                        <li><a href="rentals-search-results-3.html">Layout 3</a>
-                                        </li>
-                                        <li><a href="rentals-search-results-4.html">Layout 4</a>
-                                        </li>
-                                        <li><a href="rentals-search-results-5.html">Layout 5</a>
-                                        </li>
+                                        <li><a href="rentals-search-results-2.html">Layout 2</a> 
+                                        </li>-->
+                                        <li><a href="<?php echo site_url(); ?>rentals/rentals_search_results_3">Layout 3</a>
+                                        <!-- </li>
+                                         <li><a href="rentals-search-results-4.html">Layout 4</a> 
+                                         </li>
+                                         <li><a href="rentals-search-results-5.html">Layout 5</a>
+                                         </li> -->
                                     </ul>
                                 </li>
                             </ul>

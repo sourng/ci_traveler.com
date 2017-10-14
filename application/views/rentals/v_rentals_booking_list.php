@@ -1,10 +1,15 @@
   <ul class="booking-list">
+
+        <?php 
+            for ($i=1; $i<=6 ; $i++) { 
+                ?>
+
                         <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
-                                            <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF suite2" />
+                                            <img src="<?php echo base_url();?>public/img/1.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF suite2" />
                                             <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>7</div>
                                         </div>
                                     </div>
@@ -39,7 +44,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="booking-item" href="#">
                                 <div class="row">
                                     <div class="col-md-3">
@@ -598,5 +603,9 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
+                        
+                <?php
+            }
+         ?>
                     </ul>
