@@ -20,7 +20,7 @@ class Hotels extends CI_Controller {
 
      
       	$data = array();
-         $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
       
       	$data['style_home']="inc/v_style_home";
       	$data['header_top']="inc/v_header_top";
@@ -42,7 +42,7 @@ class Hotels extends CI_Controller {
     public function hotels_details(){
 
         $data = array();
-       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
 
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
@@ -52,6 +52,9 @@ class Hotels extends CI_Controller {
         $data['exeptional']="hotels_layout/v_exeptional_hotels_details";
         $data['available_room']="hotels_layout/v_hotels_available_room";
         $data['review']="hotels_layout/v_hotels_review";
+        $data['hotels_near']="hotels_layout/v_hotels_near";
+        $data['write_review']="hotels_layout/v_write_review";
+
 
         $data['page']="hotels/v_hotels_details";
 
@@ -62,10 +65,10 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_payment(){
+    public function payment(){
 
         $data = array();
-       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
 
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
@@ -84,7 +87,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_payment_registered(){
+    public function payment_registered(){
 
         $data = array();
          $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
@@ -108,7 +111,7 @@ class Hotels extends CI_Controller {
         
     }
     
-    public function hotels_payment_unregistered(){
+    public function payment_unregistered(){
 
         $data = array();
        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
@@ -131,7 +134,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_search(){
+    public function search(){
 
         $data = array();
        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
@@ -153,7 +156,7 @@ class Hotels extends CI_Controller {
         
     }
 
-    public function hotels_search_results(){
+    public function search_results(){
 
         $data = array();
        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
