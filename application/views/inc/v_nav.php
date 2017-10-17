@@ -121,6 +121,7 @@
                                 </li>
                             </ul>
                         </li> -->
+                        <li><a href="<?php echo site_url(); ?>">Home</a>
 
                         <li><a href="<?php echo site_url(); ?>hotels">Hotels</a>
                             <ul>
