@@ -43,6 +43,8 @@ class Rentals extends CI_Controller {
 		$data['header_top']="inc/v_header_top";
 		$data['review_list']="rentals/v_rentals_details_booking_review_list";
 		$data['booking_slider']="rentals/v_rentals_details_booking_slider";
+		$data['booking']="rentals/v_rentals_details_booking";
+		$data['properties_near']="rentals/v_rentals_details_properties_near";
 
 		$this->load->view('v_template_rentals',$data);
 	}
@@ -102,6 +104,7 @@ class Rentals extends CI_Controller {
 		$data['top_deals']="rentals/v_rentals_search_top_deals";
 		$data['top_destinations']="rentals/v_rentals_search_top_destinations";
 
+
 		$this->load->view('v_template_rentals',$data);
 	}
 
@@ -117,6 +120,7 @@ class Rentals extends CI_Controller {
 		$data['container']="rentals/v_rentals_result3_container";
 		$data['menu_left']="rentals/v_rentals_result3_menu_left";
 		$data['booking_sort_price']="rentals/v_rentals_result3_booking_sort_price";
+		$data['search']="rentals/v_rentals_result3_search";
 		
 		$this->load->view('v_template_rentals',$data);
 	}

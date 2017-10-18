@@ -4,7 +4,7 @@
                 <div class="bg-front bg-front-mob-rel">
                     <div class="container">
                         <div class="search-tabs search-tabs-bg search-tabs-abs mt50">
-                            <h1>Find Your Perfect Trip</h1>
+                            <h1>Search and Save on Hotels</h1>
                             <div class="tabbable">
                                 <ul class="nav nav-tabs" id="myTab">
                                     <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-building-o"></i> <span >Hotels</span></a>
@@ -20,7 +20,7 @@
                                 </ul>
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="tab-1">
-                                        <h2>Search and Save on Hotels</h2>
+                                        <!-- <h2>Search and Save on Hotels</h2> -->
                                         <form>
                                             <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
                                                 <label>Where are you going?</label>
@@ -413,7 +413,7 @@
                 <div class="owl-carousel owl-slider owl-carousel-area visible-lg" id="owl-carousel-slider">
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x1365.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-1.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -436,7 +436,7 @@
                     </div>
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x2048.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-2.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -459,7 +459,7 @@
                     </div>
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x1365.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-3.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -481,7 +481,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-img hidden-lg" style="background-image:url(img/2048x1365.png);"></div>
+                <div class="bg-img hidden-lg" style="background-image:url(uploads/background/bg-4.jpg);"></div>
                 <div class="bg-mask hidden-lg"></div>
             </div>
         </div>

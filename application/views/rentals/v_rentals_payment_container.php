@@ -42,7 +42,7 @@
                     <div class="booking-item-payment">
                         <header class="clearfix">
                             <a class="booking-item-payment-img" href="#">
-                                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel 1" />
+                                <img src="<?php echo base_url();?>public/img/hotel_eden_mar_suite_800x600.jpg" alt="Image Alternative text" title="hotel 1" />
                             </a>
                             <h5 class="booking-item-payment-title"><a href="#">Duplex Greenwich</a></h5>
                             <ul class="icon-group booking-item-rating-stars">
