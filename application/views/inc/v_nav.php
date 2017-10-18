@@ -122,13 +122,13 @@
                             </ul>
                         </li> -->
 
-                        <li><a href="<?php echo site_url(); ?>hotels">Hotels</a>
+                        <li><a href="<?php echo site_url(); ?>hotels/search_results">Hotels</a>
                             <ul>
-                                <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Details</a>
-                                  <!--   <ul>
+                                <!--<li><a href="<?php echo site_url(); ?>hotels/hotels_details">Details</a>
+                                    <ul>
                                         <li><a href="<?php echo site_url(); ?>hotels/hotels_details">Detail</a>
                                         </li>                                      
-                                    </ul> -->
+                                    </ul> 
                                 </li>
                                 <li><a href="<?php echo site_url(); ?>hotels/payment">Payment</a>
                                     <ul>
@@ -139,13 +139,13 @@
                                         <li><a href="<?php echo site_url (); ?>hotels/payment_unregistered">Unregistered</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li>-->
                                 <li><a href="<?php echo site_url (); ?>hotels/search">Search</a>
-                                  
+                                
                                 </li>
-                                <li><a href="<?php echo site_url (); ?>hotels/search_results">Results</a>
+                                <!-- <li><a href="<?php echo site_url (); ?>hotels/search_results">Results</a>
                                
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
 
