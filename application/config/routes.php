@@ -52,3 +52,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+
+
+// ==============================================
+
+/*admin*/
+$route['admin'] = 'Admin_Login/index';
+$route['signin.html'] = 'Admin_Login/index';
+
+//User Signup
+$route['signup.html'] = 'Admin_Login/signup';
+$route['admin/guest_register'] = 'Admin_Login/guest_register';
+
+
+//When login button click
+$route['admin/verifylogin'] = 'Admin_Login/verifylogin';
+//$route['admin/login/validate_credentials'] = 'user/validate_credentials';
+
+// After Login Success
+$route['admin/dashboard'] = 'Admin_dashboard/index';
+$route['dashboard.html'] = 'Admin_dashboard/index';
+
+$route['booking.html'] = 'Admin_dashboard/booking';
+$route['guests.html'] = 'Admin_dashboard/guests';
+
+$route['profile.html'] = 'Admin_dashboard/profile';
+
+$route['invoice-print.html'] = 'Admin_dashboard/invoice_print';
+
+// Logout
+$route['logout'] = 'Admin_Login/logout';

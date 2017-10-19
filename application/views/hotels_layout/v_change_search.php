@@ -4,6 +4,7 @@
                     <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon input-icon-highlight"></i>
                         <label>Where are you going?</label>
                         <input class="typeahead form-control" placeholder="City, Airport, Point of Interest, Hotel Name or U.S. Zip Code" type="text" />
+                        <input type="text" id="destination" class="field-input">
                     </div>
                     <div class="input-daterange" data-date-format="M d, D">
                         <div class="row">

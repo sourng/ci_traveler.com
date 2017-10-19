@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <title>Traveler - Hotels</title>
-
+    <title>Bravobookus - Hotels</title>
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta name="keywords" content="Template, html, premium, themeforest" />
