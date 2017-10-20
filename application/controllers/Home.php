@@ -25,7 +25,11 @@ class Home extends CI_Controller {
 
 
       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
-
+      // $data['service']="home/v_services";
+        $data['service']=NULL;
+        // recent_view
+        // $data['recent_view']="home/v_recent_view";
+        $data['recent_view']=NULL;
 
       $data['footer']="inc/v_footer";
       $data['script_footer_home']="inc/v_script_footer_home";
