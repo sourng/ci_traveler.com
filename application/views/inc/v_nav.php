@@ -97,27 +97,32 @@
                                 <li><a href="page-sidebar-left.html">Sidebar Left</a>
                                 </li>
                             </ul>
+<<<<<<< HEAD
+                        </li>
+                        <li><a href="<?php echo site_url(); ?>features">Features</a>
+=======
                         </li> -->
 
                        <!--  <li><a href="feature-typography.html">Features</a>
+>>>>>>> ef72a42bb92c0690c8835e090b3760bcca719163
                             <ul>
-                                <li><a href="feature-typography.html">Typography</a>
+                                <li><a href="<?php echo site_url(); ?>features">Typography</a>
                                 </li>
-                                <li><a href="feature-icons.html">Icons</a>
+                                <li><a href="<?php echo site_url(); ?>features/features_icon">Icons</a>
                                 </li>
-                                <li><a href="feature-forms.html">Forms</a>
+                                <li><a href="<?php echo site_url(); ?>features/features_form">Forms</a>
                                 </li>
-                                <li><a href="feature-icon-effects.html">Icon Effects</a>
+                                <li><a href="<?php echo site_url(); ?>features/features_icon_effects">Icon Effects</a>
                                 </li>
-                                <li><a href="feature-elements.html">Elements</a>
+                                <li><a href="<?php echo site_url(); ?>features/features_elements">Elements</a>
                                 </li>
-                                <li><a href="feature-grid.html">Grid</a>
+                                <li><a href="<?php echo site_url(); ?>features/feature_grid">Grid</a>
                                 </li>
-                                <li><a href="feature-hovers.html">Hover effects</a>
+                                <li><a href="<?php echo site_url(); ?>features/feature_hovers">Hover effects</a>
                                 </li>
-                                <li><a href="feature-lightbox.html">Lightbox</a>
+                                <li><a href="<?php echo site_url(); ?>features/feature_lightbox"">Lightbox</a>
                                 </li>
-                                <li><a href="feature-media.html">Media</a>
+                                <li><a href="<?php echo site_url(); ?>features/feature_media">Media</a>
                                 </li>
                             </ul>
                         </li> -->
