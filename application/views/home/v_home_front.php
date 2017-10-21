@@ -4,7 +4,7 @@
                 <div class="bg-front bg-front-mob-rel">
                     <div class="container">
                         <div class="search-tabs search-tabs-bg search-tabs-abs mt50">
-                            <h1>Find Your Perfect Trip</h1>
+                            <h1>Search and Save on Hotels</h1>
                             <div class="tabbable">
                                 <ul class="nav nav-tabs" id="myTab">
                                     <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-building-o"></i> <span >Hotels</span></a>
@@ -20,7 +20,7 @@
                                 </ul>
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="tab-1">
-                                        <h2>Search and Save on Hotels</h2>
+                                        <!-- <h2>Search and Save on Hotels</h2> -->
                                         <form>
                                             <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
                                                 <label>Where are you going?</label>
@@ -413,7 +413,7 @@
                 <div class="owl-carousel owl-slider owl-carousel-area visible-lg" id="owl-carousel-slider">
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x1365.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-1.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -436,7 +436,7 @@
                     </div>
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x2048.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-2.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -459,7 +459,7 @@
                     </div>
                     <div class="bg-holder full">
                         <div class="bg-mask"></div>
-                        <div class="bg-blur" style="background-image:url(img/2048x1365.png);"></div>
+                        <div class="bg-blur" style="background-image:url(uploads/background/bg-3.jpg);"></div>
                         <div class="bg-content">
                             <div class="container">
                                 <div class="loc-info text-right hidden-xs hidden-sm">
@@ -481,291 +481,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-img hidden-lg" style="background-image:url(img/2048x1365.png);"></div>
+                <div class="bg-img hidden-lg" style="background-image:url(uploads/background/bg-4.jpg);"></div>
                 <div class="bg-mask hidden-lg"></div>
             </div>
         </div>
         <!-- END TOP AREA  -->
 
-        <div class="gap"></div>
+        <!-- <div class="gap"></div> -->
+        <?php 
+        if(isset($service)){
+            ?><div class="gap"></div><?php
+            $this->load->view($service);
+        }
+
+        ?>
+
+        <!-- Recent Reviews -->
+        <?php 
+        if(isset($recent_view)){
+            $this->load->view($recent_view);
+        }
+
+        ?>
+        <!-- End Recent Reviews -->
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row row-wrap" data-gutter="120">
-                        <div class="col-md-6">
-                            <div class="mb30 thumb"><i class="fa fa-dollar box-icon-left round box-icon-big box-icon-border animate-icon-top-to-bottom"></i>
-                                <div class="thumb-caption">
-                                    <h4 class="thumb-title">Best Price Guarantee</h4>
-                                    <p class="thumb-desc">Habitant pulvinar nostra himenaeos pulvinar facilisi dui tincidunt luctus condimentum porttitor eros metus quisque scelerisque sollicitudin habitant</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb30 thumb"><i class="fa fa-briefcase box-icon-left round box-icon-big box-icon-border animate-icon-top-to-bottom"></i>
-                                <div class="thumb-caption">
-                                    <h4 class="thumb-title">Combine & Save</h4>
-                                    <p class="thumb-desc">Hendrerit pretium magna ultricies massa dignissim mi praesent et justo sed platea est cras penatibus fermentum neque</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb30 thumb"><i class="fa fa-send box-icon-left round box-icon-big box-icon-border animate-icon-top-to-bottom"></i>
-                                <div class="thumb-caption">
-                                    <h4 class="thumb-title">Best Destinations</h4>
-                                    <p class="thumb-desc">Morbi vel nec sed imperdiet accumsan ultricies aliquet suspendisse placerat feugiat tellus platea fermentum eros in commodo</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb30 thumb"><i class="fa fa-thumbs-o-up box-icon-left round box-icon-big box-icon-border animate-icon-top-to-bottom"></i>
-                                <div class="thumb-caption">
-                                    <h4 class="thumb-title">Best Travel Agent</h4>
-                                    <p class="thumb-desc">Quisque porta dolor scelerisque gravida commodo in accumsan ullamcorper laoreet nam litora senectus diam sapien hac turpis</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-holder">
-            <div class="bg-mask"></div>
-            <div class="bg-blur" style="background-image:url(img/1280x848.png);"></div>
-            <div class="bg-content">
-                <div class="container">
-                    <div class="gap"></div>
-                    <h1 class="text-center text-white mb20">Recent Reviews</h1>
-                    <div class="row row-wrap">
-                        <div class="col-md-4">
-                            <!-- START TESTIMONIAL -->
-                            <div class="testimonial text-white">
-                                <div class="testimonial-inner">
-                                    <blockquote>
-                                        <p>Eget penatibus hac tortor imperdiet ante elementum tellus vel habitant in laoreet aenean sapien penatibus</p>
-                                    </blockquote>
-                                </div>
-                                <div class="testimonial-author">
-                                    <img src="img/50x50.png" alt="Image Alternative text" title="Sevenly Shirts - June 2012  2" />
-                                    <p class="testimonial-author-name">Alison Mackenzie</p><cite>on <a class="text-udl" href="#">Waldorf Astoria</a> hotel in New York</cite>
-                                </div>
-                            </div>
-                            <!-- END TESTIMONIAL -->
-                        </div>
-                        <div class="col-md-4">
-                            <!-- START TESTIMONIAL -->
-                            <div class="testimonial text-white">
-                                <div class="testimonial-inner">
-                                    <blockquote>
-                                        <p>Netus cum ornare massa blandit natoque dui volutpat lacus non volutpat enim praesent lobortis semper</p>
-                                    </blockquote>
-                                </div>
-                                <div class="testimonial-author">
-                                    <img src="img/50x50.png" alt="Image Alternative text" title="Flare lens flare" />
-                                    <p class="testimonial-author-name">Cheryl Gustin</p><cite>on <a class="text-udl" href="#">Wellington</a> hotel in New York</cite>
-                                </div>
-                            </div>
-                            <!-- END TESTIMONIAL -->
-                        </div>
-                        <div class="col-md-4">
-                            <!-- START TESTIMONIAL -->
-                            <div class="testimonial text-white">
-                                <div class="testimonial-inner">
-                                    <blockquote>
-                                        <p>Aliquam vulputate velit penatibus elit gravida neque mollis purus vivamus habitasse iaculis nullam cras consectetur</p>
-                                    </blockquote>
-                                </div>
-                                <div class="testimonial-author">
-                                    <img src="img/50x50.png" alt="Image Alternative text" title="Afro" />
-                                    <p class="testimonial-author-name">Sarah Slater</p><cite>on <a class="text-udl" href="#">Holiday</a> hotel in New York</cite>
-                                </div>
-                            </div>
-                            <!-- END TESTIMONIAL -->
-                        </div>
-                    </div>
-                    <div class="gap-small gap"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="gap"></div>
-            <h1 class="text-center mb20">Last Minute Deals</h1>
-            <div class="row row-wrap">
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star-half-empty"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">The Benjamin</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> New York, NY (Chelsea)</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$394</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY RIO INTERNACIONAL de luxe" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">The London NYC</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> New York, NY (Chelsea)</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$355</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel 1" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star-half-empty"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">InterContinental New York Barclay</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> Ozone Park, NY (Kennedy Airport (JFK))</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$213</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF suite2" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star-o"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">Affinia Shelburne</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> Brooklyn, NY (Brooklyn)</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$238</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel 2" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star-half-empty"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">New York Hilton Midtown</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> New York, NY (Midtown East)</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$438</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
-                                <h5 class="hover-title-center">Book Now</h5>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <ul class="icon-group text-tiny text-color">
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star"></i>
-                                </li>
-                                <li><i class="fa fa-star-half-empty"></i>
-                                </li>
-                            </ul>
-                            <h5 class="thumb-title"><a class="text-darken" href="#">Wellington Hotel</a></h5>
-                            <p class="mb0"><small><i class="fa fa-map-marker"></i> New York, NY (Downtown - Wall Street)</small>
-                            </p>
-                            <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$210</span><small> avg/night</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gap gap-small"></div>
-        </div>
+
+        <!-- Last Minute Deals -->
+        <?php 
+            if(isset($last_minute_deals)){
+                $this->load->view($last_minute_deals);
+            }
+        ?>
+
+        <!-- End Last Minute Deals -->

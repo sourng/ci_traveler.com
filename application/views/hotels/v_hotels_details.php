@@ -28,6 +28,9 @@
                     </div>
                     <div class="col-md-3">
                         <p class="booking-item-header-price"><small>price from</small>  <span class="text-lg">$350</span>/night</p>
+                        
+                        <center><a href="<?php echo site_url(); ?>hotels/payment"><span class="btn btn-primary">Book Nows</span></a></center>
+               
                     </div>
                 </div>
             </header>
@@ -70,12 +73,31 @@
             </div>
             <h3 class="mb20">Hotel Reviews</h3>
             <div class="row row-wrap">
-                
-                <?php 
-                    if(isset($review)){
-                        $this->load->view($review);
-                    }
-                ?>
+                <div class="col-md-8">
+
+                    <?php 
+                        if(isset($review)){
+                            $this->load->view($review);
+                        }
+                    ?>
+                    <!--write_review-->
+                    <div class="box bg-gray">    
+                       <?php
+                            if(isset($write_review)){
+                                $this->load->view($write_review);
+                            }
+                       ?>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <?php
+                        if(isset($hotels_near)){
+                            $this->load->view($hotels_near);
+                        }
+                    ?>
+                </div>
 
 
             </div>

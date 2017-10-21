@@ -2,7 +2,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <a class="logo" href="index.html">
+                            <a class="logo" href="<?php echo site_url(); ?>">
                                 <img src="<?php echo base_url(); ?>public/img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </div>

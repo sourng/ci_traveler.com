@@ -46,8 +46,8 @@
                         ?>
                         <div class="col-md-3">
                             <div class="thumb">
-                                <a class="hover-img" href="#">
-                                    <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="Gaviota en el Top" />
+                                <a class="hover-img" href="<?php echo site_url(); ?>hotels/hotels_details">
+                                    <img src="<?php echo base_url();?>public/img/hotels_70×70.jpg" alt="Image Alternative text" title="Gaviota en el Top" />
                                     <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-hold">
                                         <div class="text-small">
                                             <h5>New York City Hotels</h5>
@@ -75,8 +75,8 @@
                       <div class="col-md-3">
                     <div class="thumb">
                         <header class="thumb-header">
-                            <a class="hover-img" href="#">
-                                <img src="<?php echo base_url();?>public/img/800x600.png" alt="Image Alternative text" title="hotel 1" />
+                            <a class="hover-img" href="<?php echo site_url(); ?>hotels/hotels_details">
+                                <img src="<?php echo base_url();?>public/img/Hotel_Centar_800×600.jpg" alt="Image Alternative text" title="hotel 1" />
                                 <h5 class="hover-title-center">Book Now</h5>
                             </a>
                         </header>

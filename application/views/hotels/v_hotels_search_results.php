@@ -113,11 +113,11 @@
                             for($i=1;$i<=10;$i++){
                                 ?>
                                    <li>
-                            <a class="booking-item" href="#">
+                            <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
-                                            <img src="img/800x600.png" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO suite lhotel living room" />
+                                            <img src="<?php echo base_url();?>public/img/Hotel_Centar_800×600.jpg" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO suite lhotel living room" />
                                             <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>28</div>
                                         </div>
                                     </div>
@@ -139,7 +139,7 @@
                                         <h5 class="booking-item-title">Bryant Park Hotel</h5>
                                         <p class="booking-item-address"><i class="fa fa-map-marker"></i> East Elmhurst, NY (LaGuardia Airport (LGA))</p><small class="booking-item-last-booked">Latest booking: 58 minutes ago</small>
                                     </div>
-                                    <div class="col-md-3"><span class="booking-item-price-from">from</span><span class="booking-item-price">$391</span><span>/night</span><span class="btn btn-primary">Book Now</span>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span><span class="booking-item-price">$391</span><span>/night</span>a<span class="btn btn-primary">Book Now</span>
                                     </div>
                                 </div>
                             </a>

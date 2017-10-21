@@ -5,18 +5,9 @@
                                 <div class="col-md-6">
                                     <div class="input-daterange" data-date-format="MM d, D">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-hightlight"></i>
-                                                    <label>Check in</label>
-                                                    <input class="form-control" name="start" type="text" />
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-hightlight"></i>
-                                                    <label>Check out</label>
-                                                    <input class="form-control" name="end" type="text" />
-                                                </div>
-                                            </div>
+                                            <?php
+                                                   $this->load->view('hotels_layout/v_check_in_out');
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -120,13 +111,13 @@
                     <div class="gap gap-small"></div>
                     <ul class="booking-list">
                        <?php 
-                      	for($i=0;$i<3;$i++){
+                      	for($i=0;$i<4;$i++){
                       		?>
                       		  <li>
                             <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img src="img/800x600.png" alt="Image Alternative text" title="The pool" />
+                                        <img src="<?php echo base_url();?>public/img/room_800×600.jpg" alt="Image Alternative text" title="The pool" />
                                     </div>
                                     <div class="col-md-6">
                                         <h5 class="booking-item-title">Family Suite</h5>

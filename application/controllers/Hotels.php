@@ -7,10 +7,12 @@ class Hotels extends CI_Controller {
     function __construct() {
         parent::__construct();
 
+        $this->load->model('Crud_model','m_crud');
+        $this->load->database();
+
         // $this->load->model('post');
         // $this->load->library('Ajax_pagination');
         // $this->perPage = 2;
-
         $this->load->helper('url');
     }
     
@@ -18,13 +20,16 @@ class Hotels extends CI_Controller {
 
      
       	$data = array();
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
       
       	$data['style_home']="inc/v_style_home";
       	$data['header_top']="inc/v_header_top";
       	$data['nav']="inc/v_nav";
 
+
         $data['change_search']="hotels_layout/v_change_search";
         $data['menu_left_hotel']="hotels_layout/v_menu_left_hotels";
+
 
 		$data['page']="hotels/v_hotels";
 
@@ -37,7 +42,8 @@ class Hotels extends CI_Controller {
     public function hotels_details(){
 
         $data = array();
-      
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -46,6 +52,9 @@ class Hotels extends CI_Controller {
         $data['exeptional']="hotels_layout/v_exeptional_hotels_details";
         $data['available_room']="hotels_layout/v_hotels_available_room";
         $data['review']="hotels_layout/v_hotels_review";
+        $data['hotels_near']="hotels_layout/v_hotels_near";
+        $data['write_review']="hotels_layout/v_write_review";
+
 
         $data['page']="hotels/v_hotels_details";
 
@@ -59,7 +68,8 @@ class Hotels extends CI_Controller {
     public function payment(){
 
         $data = array();
-      
+        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -80,6 +90,7 @@ class Hotels extends CI_Controller {
     public function payment_registered(){
 
         $data = array();
+         $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
       
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
@@ -103,7 +114,8 @@ class Hotels extends CI_Controller {
     public function payment_unregistered(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -125,7 +137,8 @@ class Hotels extends CI_Controller {
     public function search(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -146,7 +159,8 @@ class Hotels extends CI_Controller {
     public function search_results(){
 
         $data = array();
-      
+       $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+       
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
@@ -167,6 +181,3 @@ class Hotels extends CI_Controller {
     }
     
 }
-
-
-
