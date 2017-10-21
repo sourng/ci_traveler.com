@@ -128,7 +128,7 @@ function ajaxPaginationData(){
 
 
     
-    public function hotels_details(){
+    public function hotels_details($id){
 
         $data = array();
         $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
@@ -143,6 +143,35 @@ function ajaxPaginationData(){
         $data['review']="hotels_layout/v_hotels_review";
         $data['hotels_near']="hotels_layout/v_hotels_near";
         $data['write_review']="hotels_layout/v_write_review";
+
+
+
+$sql="SELECT hotels.*,destinations.destinations,hotel_rooms.* 
+        FROM hotels INNER JOIN destinations ON destinations.dest_id=hotels.dest_id 
+        INNER JOIN hotel_rooms ON hotels.hotel_id=hotel_rooms.hotel_id 
+        WHERE hotels.hotel_id=".$id;    
+        $data['hotelDetail']=$this->m_sourng->get_by_sql($sql,false);
+
+// Gallery Hotel
+        $sql_h_gallery="SELECT * FROM hotel_gallery
+        WHERE hotel_id=".$id;   
+        $data['hotelGallery']=$this->m_sourng->get_by_sql($sql_h_gallery,false);
+// Hotel Rooms
+        $sql_h_Rooms="SELECT * FROM hotel_rooms
+        WHERE hotel_id=".$id ." AND hr_status='Y'"; 
+        $data['hotelRooms']=$this->m_sourng->get_by_sql($sql_h_Rooms,false);
+
+        // Hotel Facilities
+        $sql_h_Facil="SELECT * FROM hotel_facilities
+        WHERE hotel_id=".$id ;
+        $data['hotelFacil']=$this->m_sourng->get_by_sql($sql_h_Facil,false);
+
+        // Hotel Policy
+        $sql_h_Policy="SELECT * FROM policies WHERE hotel_id=".$id ;
+
+        $data['Policy']=$this->m_sourng->get_by_sql($sql_h_Policy,false);
+
+
 
 
         $data['page']="accomondations/v_hotels_details";

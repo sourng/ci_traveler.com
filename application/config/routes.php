@@ -53,7 +53,8 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-
+// Accomondations
+$route['hotels.html/(.+)$'] = 'accomondations/hotels_details/$1';
 
 
 // ==============================================

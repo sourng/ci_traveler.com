@@ -10,24 +10,24 @@
             </li>
             <li><a href="#">New York City Hotels</a>
             </li>
-            <li class="active">InterContinental New York Barclay</li>
+            <li class="active"><?php echo $hotelDetail[0]['h_name']; ?></li>
         </ul>
         <div class="booking-item-details">
             <header class="booking-item-header">
                 <div class="row">
                     <div class="col-md-9">
-                        <h2 class="lh1em">InterContinental New York Barclay</h2>
-                        <p class="lh1em text-small"><i class="fa fa-map-marker"></i> 6782 Sarasea Circle, Siesta Key, FL 34242</p>
+                        <h2 class="lh1em"><?php echo $hotelDetail[0]['h_name']; ?></h2>
+                        <p class="lh1em text-small"><i class="fa fa-map-marker"></i> <?php echo $hotelDetail[0]['h_address']; ?></p>
                         <ul class="list list-inline text-small">
-                            <li><a href="#"><i class="fa fa-envelope"></i> Hotel E-mail</a>
+                            <li><a href="<?php echo $hotelDetail[0]['h_email']; ?>"><i class="fa fa-envelope"></i> <?php echo $hotelDetail[0]['h_email']; ?></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-home"></i> Hotel Website</a>
+                            <li><a href="#"><i class="fa fa-home"></i> <?php echo $hotelDetail[0]['h_site']; ?></a>
                             </li>
-                            <li><i class="fa fa-phone"></i> +1 (163) 493-1463</li>
+                            <li><i class="fa fa-phone"></i> <?php echo $hotelDetail[0]['h_contact_phone']; ?></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <p class="booking-item-header-price"><small>price from</small>  <span class="text-lg">$350</span>/night</p>
+                        <p class="booking-item-header-price"><small>price from</small>  <span class="text-lg">$<?php echo $hotelDetail[0]['hr_base_rate']; ?></span>/night</p>
                         
                         <center><a href="<?php echo site_url(); ?>hotels/payment"><span class="btn btn-primary">Book Nows</span></a></center>
                
