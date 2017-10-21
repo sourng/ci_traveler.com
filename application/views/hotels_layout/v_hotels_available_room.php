@@ -110,54 +110,57 @@
                     </div>
                     <div class="gap gap-small"></div>
                     <ul class="booking-list">
-                       <?php 
-                      	for($i=0;$i<4;$i++){
-                      		?>
-                      		  <li>
-                            <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="<?php echo base_url();?>public/img/room_800×600.jpg" alt="Image Alternative text" title="The pool" />
+                      
+                      <?php 
+                      foreach($available_rooms as  $ava) {
+                         ?>
+                         <li>
+                                <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="<?php echo base_url();?>uploads/hotels/<?php echo $ava['hr_image'] ?>" alt="Image Alternative text" title="The pool" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="booking-item-title"><?php echo $ava['Room Name'] ?></h5>
+                                            <p class="text-small">Metus eu eros ipsum mattis vehicula nisl egestas nec ultrices varius semper laoreet</p>
+                                            <ul class="booking-item-features booking-item-features-sign clearfix">
+                                                <li rel="tooltip" data-placement="top" title="Adults Occupancy"><i class="fa fa-male"></i><span class="booking-item-feature-sign">x 2</span>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Beds"><i class="im im-bed"></i><span class="booking-item-feature-sign">x 1</span>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Room footage (square feet)"><i class="im im-width"></i><span class="booking-item-feature-sign">580</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="booking-item-features booking-item-features-small clearfix">
+                                                <li rel="tooltip" data-placement="top" title="Mini Bar"><i class="im im-bar"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Bathtub"><i class="im im-bathtub"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Kitchen"><i class="im im-kitchen"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Patio"><i class="im im-patio"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Soundproof"><i class="im im-soundproof"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="SPA tub"><i class="im im-spa"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Terrace"><i class="im im-terrace"></i>
+                                                </li>
+                                                <li rel="tooltip" data-placement="top" title="Washing Machine"><i class="im im-washing-machine"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3"><span class="booking-item-price">$<?php echo $ava['room_sell'] ?></span><span>/night</span><span class="btn btn-primary">Book</span>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <h5 class="booking-item-title">Family Suite</h5>
-                                        <p class="text-small">Metus eu eros ipsum mattis vehicula nisl egestas nec ultrices varius semper laoreet</p>
-                                        <ul class="booking-item-features booking-item-features-sign clearfix">
-                                            <li rel="tooltip" data-placement="top" title="Adults Occupancy"><i class="fa fa-male"></i><span class="booking-item-feature-sign">x 2</span>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Beds"><i class="im im-bed"></i><span class="booking-item-feature-sign">x 1</span>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Room footage (square feet)"><i class="im im-width"></i><span class="booking-item-feature-sign">580</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="booking-item-features booking-item-features-small clearfix">
-                                            <li rel="tooltip" data-placement="top" title="Mini Bar"><i class="im im-bar"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Bathtub"><i class="im im-bathtub"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Kitchen"><i class="im im-kitchen"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Patio"><i class="im im-patio"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Soundproof"><i class="im im-soundproof"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="SPA tub"><i class="im im-spa"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Terrace"><i class="im im-terrace"></i>
-                                            </li>
-                                            <li rel="tooltip" data-placement="top" title="Washing Machine"><i class="im im-washing-machine"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3"><span class="booking-item-price">$211</span><span>/night</span><span class="btn btn-primary">Book</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
+                                </a>
+                            </li>
 
-                      		<?php
-                      	}
+
+                         <?php
+                      }
+
+
                       ?>
 
 

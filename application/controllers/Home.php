@@ -34,6 +34,8 @@ class Home extends CI_Controller {
 
      $data['last_minute_deals']="home/v_last_minute_deals";
     // $data['last_minute_deals']=NULL;
+
+     
      $sql_deal="SELECT 
             distinct  d.dest_id,d.destinations,d.dest_landmark,d.country
             ,h.hotel_id,h.h_name,h.h_slug,h.h_feature_image,h.h_description,h.h_address,h.star_rating,

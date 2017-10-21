@@ -3,6 +3,8 @@
             <h1 class="text-center mb20">Last Minute Deals</h1>
             <div class="row row-wrap">
                 <?php 
+                // lmdeal=last minute deals
+                // $last_minute_deals_data : get from Controller name : home
                 foreach ($last_minute_deals_data as $lmdeal) {
                     ?>
                     <div class="col-md-4">

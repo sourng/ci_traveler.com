@@ -168,8 +168,15 @@ $sql="SELECT hotels.*,destinations.destinations,hotel_rooms.*
 
         // Hotel Policy
         $sql_h_Policy="SELECT * FROM policies WHERE hotel_id=".$id ;
-
         $data['Policy']=$this->m_sourng->get_by_sql($sql_h_Policy,false);
+
+        // Available Rooms
+        $sql_a_rooms="SELECT sr.sell_room_id,sr.hroom_id,hr.hr_name as 'Room Name',hr.hr_image,sr.hotel_id,sr.sell_date,sr.day,sr.month,sr.year,sr.max_people,sr.base_rate,sr.discount,sr.room_sell 
+        FROM selling_rooms as sr INNER JOIN hotel_rooms as hr ON sr.hroom_id=hr.hroom_id 
+        WHERE hr.hotel_id=".$id ;
+
+
+        $data['available_rooms']=$this->m_sourng->get_by_sql($sql_a_rooms,false);
 
 
 
