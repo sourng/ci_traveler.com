@@ -13,7 +13,7 @@
             <label class="btn btn-primary">
                 <input type="radio" name="options" />4+</label>
         </div>
-        <select class="form-control hidden">
+        <select class="form-control hidden" name="rooms">
             <option>1</option>
             <option>2</option>
             <option>3</option>

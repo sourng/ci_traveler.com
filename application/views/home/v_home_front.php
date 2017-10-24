@@ -21,10 +21,10 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade in active" id="tab-1">
                                         <!-- <h2>Search and Save on Hotels</h2> -->
-                                        <form>
+                                        <form action="<?php echo base_url(); ?>accomondations/search_results" method="get">
                                             <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
                                                 <label>Where are you going?</label>
-                                                <input class="typeahead form-control" placeholder="City, Airport, Point of Interest or U.S. Zip Code" type="text" />
+                                                <input class="typeahead form-control" placeholder="City, Airport, Point of Interest or U.S. Zip Code" type="text" name="destination" />
                                             </div>
                                             <div class="input-daterange" data-date-format="M d, D">
                                                 <div class="row">

@@ -57,7 +57,7 @@
 
                             ?>
                         <li>
-                            <a class="booking-item" href="<?php echo site_url(); ?>hotels/hotels_details">
+                            <a class="booking-item" href="<?php echo site_url(); ?>hotels.html/<?php echo $lmdeal['hotel_id']; ?>">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
@@ -88,7 +88,6 @@
                                 </div>
                             </a>
                         </li>
-
 
                                 <?php
                             }

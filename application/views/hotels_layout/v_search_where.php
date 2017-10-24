@@ -2,6 +2,6 @@
     <label>Where You want to stay?</label>
     <!-- <input class="typeahead form-control" placeholder="City, Hotel Name or U.S. Zip Code" type="text" id="destination" class="field-input" /> -->
     <!-- <input type="text" id="destination" class="field-input"> -->
-     <input class="typeahead form-control" placeholder="City, Hotel Name or U.S. Zip Code" type="text" id="keywords" name="txtdestination" id="destination" class="field-input" onkeyup="searchFilter()">
+     <input class="typeahead form-control" placeholder="City, Hotel Name or U.S. Zip Code" type="text" id="keywords" name="destination" id="destination" class="field-input" onkeyup="searchFilter()" value="<?php echo $destination; ?>">
 
 </div>

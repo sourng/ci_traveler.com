@@ -3,7 +3,7 @@
         </div>
 
         <div class="container">
-            <form>
+            <form action="<?php echo base_url() ?>search_results">
                 <div class="row">
                     <div class="col-md-4">
                        <?php
@@ -36,6 +36,8 @@
                     </div>
                 </div>
                 <input class="btn btn-primary mt10" type="submit" value="Search for Hotels" />
+
+                <button class="btn btn-primary btn-lg" type="submit">Search for Hotels</button>
             </form>
             <div class="gap gap-small"></div>
             <h3 class="mb20">Hotels in Popular Destinations</h3>

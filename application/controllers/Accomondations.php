@@ -34,6 +34,7 @@ class Accomondations extends CI_Controller {
         $data['breadcrumb_4']="Netherlands";
         $data['title']="Hotel List Search Result";
 //---------------------------------------------------------
+        $data['destination']="";
 
          //total rows count
         $totalRec = count($this->mh->getRows());
@@ -179,7 +180,10 @@ $sql="SELECT hotels.*,destinations.destinations,hotel_rooms.*
         $data['available_rooms']=$this->m_sourng->get_by_sql($sql_a_rooms,false);
 
 
+// Get Map
 
+
+// End Get Map
 
         $data['page']="accomondations/v_hotels_details";
 
@@ -284,7 +288,40 @@ $sql="SELECT hotels.*,destinations.destinations,hotel_rooms.*
     public function search_results(){
 
         $data = array();
+         $data['breadcrumb_1']="index";
+        $data['breadcrumb_2']="Hotels";
+        $data['breadcrumb_3']="Europe";
+        $data['breadcrumb_4']="Netherlands";
+        $data['title']="Hotel List Search Result";
+
+        $data['destination']=$_GET['destination'];
+
        $data['settings']=$this->m_crud->get_by_sql("SELECT * FROM settings");
+
+
+   //total rows count
+        $totalRec = count($this->mh->getRows());
+        
+        //pagination configuration
+        $config['target']      = '#postList';
+        $config['base_url']    = base_url().'accomondations/ajaxPaginationData';
+        $config['total_rows']  = $totalRec;
+        $config['per_page']    = $this->perPage;
+        $config['link_func']   = 'searchFilter';
+        $this->ajax_pagination->initialize($config);
+        
+        //get the posts data
+        $data['hotel'] = $this->mh->getRows(array('limit'=>$this->perPage));
+
+       $data['hotel_count']=$this->m_sourng->count_by_sql("SELECT * FROM hotels WHERE hotel_blocked='N'",false);
+        $data['dest']=$this->m_sourng->get_by_sql("SELECT * FROM destinations",false);
+//-----------------------------------------------------------------------------
+
+
+
+
+
+
        
         $data['style_home']="inc/v_style_home";
         $data['header_top']="inc/v_header_top";
