@@ -143,10 +143,7 @@ class Hotels extends CI_Controller {
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
         
-        $data['where']="hotels_layout/v_search_where";
-        $data['check']="hotels_layout/v_check_in_out";
-        $data['guests']="hotels_layout/v_search_guests";
-        $data['room']="hotels_layout/v_search_room";
+        
         $data['page']="hotels/v_hotels_search";
 
         $data['footer']="inc/v_footer";
@@ -165,10 +162,6 @@ class Hotels extends CI_Controller {
         $data['header_top']="inc/v_header_top";
         $data['nav']="inc/v_nav";
 
-        $data['where']="hotels_layout/v_search_where";
-        $data['check']="hotels_layout/v_check_in_out";
-        $data['guests']="hotels_layout/v_search_guests";
-        $data['room']="hotels_layout/v_search_room";
         $data['menu_left_hotel']="hotels_layout/v_menu_left_hotels";
         
         $data['page']="hotels/v_hotels_search_results";
