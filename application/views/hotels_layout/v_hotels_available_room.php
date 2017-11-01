@@ -125,7 +125,7 @@
                       foreach($available_rooms as  $ava) {
                          ?>
                          <li>
-                                <a class="booking-item" href="<?php echo site_url(); ?>hotels.html/<?php echo $lmdeal['hotel_id']; ?>">
+                                <a class="booking-item" href="<?php echo site_url(); ?>hotels.html/<?php echo $ava['hotel_id']; ?>">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <img src="<?php echo base_url();?>uploads/hotels/<?php echo $ava['hr_image'] ?>" alt="Image Alternative text" title="The pool" />
